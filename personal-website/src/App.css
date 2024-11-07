@@ -1,4 +1,56 @@
-.App {
+/* mt fuji background image */
+.background {
+  background-image: url('../public/mt-fuji.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* margin: 0; */
+}
+
+/* makes the background image flush with the top; used to have a white margin at the top */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+/* inter font */
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+/* name */
+.Name-title {
+  color: white;
+  mix-blend-mode: exclusion;
+  /* text-align: center; */
+  font-size: 10vw;
+  font-family: inter;
+}
+
+/* centering container (vertically and horizontally) */
+.center-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-items: center;
+  height: 75vh;
+  /* text-align: center; */
+  /* justify-content: center; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* container for the website */
+.container {
+  /* height: 500vh; */
+  background-color: #CCCCCC;
+}
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +87,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
