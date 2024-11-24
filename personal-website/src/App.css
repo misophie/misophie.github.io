@@ -1,11 +1,11 @@
 /* mt fuji background image */
-.background {
-  background-image: url('../public/mt-fuji.jpg');
+.mt-fuji-background {
+  background-image: url('./assets/mt-fuji.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
-  display: flex;
+  /* display: flex; */
   /* margin: 0; */
 }
 
@@ -44,10 +44,130 @@
 
 /* container for the website */
 .container {
-  /* height: 500vh; */
+  height: auto;
   background-color: #CCCCCC;
+  padding-bottom: 20vh;
 }
 
+/* title for each section of the page */
+h1 {
+  font-size: 3.5rem;
+  font-family: inter;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+    font-family: inter;
+  }
+}
+
+/* container for the about-me */
+.container-about-me {
+  display: grid;
+  /* display: flexbox; */
+  padding: 0 0 2% 7%;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center; */
+  /* max-width: 50%; */
+  gap: 4vw;
+  p {
+    text-align: left;
+  }
+  /* background-color: orange; */
+}
+
+.container-about-me-inner {
+  grid-template-columns: 1fr 3fr;
+  display: grid;
+  align-content: space-around;
+  align-items: center;
+}
+
+.container-about-me-tower {
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+.container-about-me-pic {
+  grid-column: 1 / 3;
+  width: 100%;
+  padding-top: 3vh;
+  border-radius: 30px;
+}
+
+.container-experience-education {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 7%;
+  row-gap: 3%;
+  margin: 0 auto auto auto;
+  width: 75%;
+  display: grid;
+  /* margin-top: 1vw; */
+  height: 75vh;
+}
+
+.container-experience-education img {
+  place-self: center;
+}
+
+.container-experience-right {
+  /* grid-template-rows: 1fr 1fr;
+  display: grid; */
+  justify-content: left;
+  align-content: space-around;
+}
+
+.experience-title {
+  font-size: 1.5em;
+}
+
+.experience-subtitle {
+  font-size: 1.5em;
+  color: #535252;
+}
+
+.container-projects {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+  justify-items: center;
+  margin-right: 7%;
+  row-gap: 10%;
+}
+
+.container-projects p {
+  color: #535252;
+}
+
+.inline-block {
+  display: inline;
+  white-space: pre-wrap;
+}
+
+.end-image-container {
+  margin-top: 15%;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.end-image-container img {
+  height: auto;
+  width: 75%;
+}
+
+/* .strawberry-ladybug-background {
+  background-image: url("../public/strawberry-ladybug.jpg");
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+} */
 
 
 /* .App {

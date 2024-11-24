@@ -11,6 +11,7 @@
     mix-blend-mode: exclusion;
     font: inter;
     font-size: clamp(0.8rem, 1vw+0.5rem, 1.2rem);
+    display: flex;
   }
 
 .floating-toolbar button {
@@ -36,12 +37,30 @@
     content: '[ ● ] '
 }
 
-.floating-toolbar button:hover {
-    background: #555; /* Hover effect */
-
-}
+/* .floating-toolbar button:hover {
+    background: #555; 
+} */
 
 .floating-toolbar img {
     max-height: 15px;
     max-width: 15px;
 }
+
+@media (max-width: 600px) {
+    .toolbar {
+      display: none; /* Hide toolbar on small screens */
+    }
+  
+    .hamburger-menu {
+      display: block; /* Show the hamburger menu */
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      font-size: 30px;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1001; /* Ensure the hamburger icon is above the toolbar */
+    }
+  }
