@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 import FloatingToolbar from './FloatingToolbar';
 import Briefcase from './assets/briefcase-icon.svg';
@@ -10,9 +10,11 @@ import Camera from './assets/camera-icon.svg';
 import TokyoTower from './assets/tokyo-tower.jpg'
 import EiffelTower from './assets/eiffel-tower.jpg'
 import SophieLightMode from './assets/sophie-light-mode.jpg'
-import Arcadis from './assets/arcadis-logo.svg';
+import ArcadisLight from './assets/arcadis-logo-black.svg';
+import ArcadisDark from './assets/arcadis-logo-white.svg';
 import Vinquery from './assets/vinquery-logo.svg';
-import UBC from './assets/ubc-logo.svg';
+import UBCBlue from './assets/ubc-logo-blue.png';
+import UBCWhite from './assets/ubc-logo-white.png';
 import EndLight from './assets/end-page-light.png';
 
 
@@ -23,6 +25,7 @@ function toggleMenu() {
 }
 
 function App() {
+  // Scrolling functionality
   const header1Ref = useRef(null);
   const header2Ref = useRef(null);
   const header3Ref = useRef(null);
@@ -44,10 +47,16 @@ function App() {
       console.error(`No ref found for header: ${headerId}`);
     }
   };
+  // Dark mode functionality 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  }
 
   return (
-    <div className="container">
-      <FloatingToolbar onScrollToHeader={scrollToHeader}/>
+    <div className={isDarkMode ? "container-light" : "container-dark"}>
+      <FloatingToolbar onScrollToHeader={scrollToHeader} setDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
+      {/* need to change dark mode */}
       <div className="mt-fuji-background">
         <div class="center-container">
           <header className="Name-title">
@@ -62,9 +71,11 @@ function App() {
             <p>Data Scientist @ Arcadis</p>
             <img src={GradCap} alt="Graduation cap, representing education attained"/>
             <p>B.Sc in Computational Intelligence and Design @ UBC <br/> (Cognitive Science & Computer Science)</p>
+            {/* need to change dark mode  */}
             <img className="container-about-me-pic" src={SophieLightMode} alt="A picture of me at TeamLab Planets"/>
           </div>
-          <img className="container-about-me-tower" src={TokyoTower} alt="Picture of the Tokyo Tower I took"/>
+          {/* <img className="container-about-me-tower" src={TokyoTower} alt="Picture of the Tokyo Tower I took"/> */}
+          <div>{isDarkMode ? <img src={TokyoTower} alt="Tokyo Tower" className="container-about-me-pic"/> : <img src={EiffelTower} alt="Eiffel Tower" className="container-about-me-pic"/>}</div>
           <div className="container-about-me-inner">
             <img src={GitHub} alt="GitHub icon"/>
             <a href="https://github.com/misophie" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -76,27 +87,27 @@ function App() {
         </div>
         <h1 ref={header2Ref}>Experience & Education</h1>
         <div className="container-experience-education">
-          <img src={Arcadis} alt="Arcadis Logo"/>
+          <img src={isDarkMode ? ArcadisLight : ArcadisDark} className='svg-responsive'/>
           <div className="container-experience-right">
-            <p class="experience-title"> Data Scientist</p>
+            <p class={isDarkMode ? "experience-title-light" : "experience-title-dark"}> Data Scientist</p>
             <p class="experience-subtitle">Nov. 2024 - Present</p>
           </div>
           <img src={Vinquery} alt="Vinquery Logo"/>
           <div className="container-experience-right">
-            <p class="experience-title"> Software Developer Intern</p>
+            <p class={isDarkMode ? "experience-title-light" : "experience-title-dark"}> Software Developer Intern</p>
             <p class="experience-subtitle">May 2020 - Nov. 2024</p>
           </div>
-          <img src={UBC} alt="University of British Columbia Logo"/>
+          <img src={isDarkMode ? UBCBlue : UBCWhite} alt="University of British Columbia Logo"/>
           <div className="container-experience-right">
-            <p class="experience-title"> Computational Intelligence and Design (B.Sc)</p>
+            <p class={isDarkMode ? "experience-title-light" : "experience-title-dark"}> Computational Intelligence and Design (B.Sc)</p>
             <p class="experience-subtitle">Sep. 2019 - May 2024</p>
           </div>
         </div>
         <h1 ref={header3Ref}>Projects</h1>
-        <div className="container-projects">
-          <img src={UBC} alt="University of British Columbia Logo"/>
+        <div className={isDarkMode ? "container-projects-light" : "container-projects-dark"}>
+          <img src={isDarkMode ? UBCBlue : UBCWhite} alt="University of British Columbia Logo"/>
           <div>
-            <h5 class="experience-title">Counterfactual Arguments Using Bayesian Networks</h5>
+            <h5 class={isDarkMode ? "experience-title-light" : "experience-title-dark"}>Counterfactual Arguments Using Bayesian Networks</h5>
             <p class="inline-block">I wrote a paper detailing an issue that was frequently overlooked when applying Judea Pearl’s theory with counterfactual arguments which is credited in David Poole and Alan Mackworth’s Artificial Intelligence textbook.</p>
             <br/>
             <p class="inline-block">You can read the paper </p> 
@@ -106,7 +117,7 @@ function App() {
           </div>
           <img src={Vinquery} alt="VINquery Logo"/>
           <div>
-            <h5 class="experience-title">VINfix Algorithm and RESTful API</h5>
+            <h5 class={isDarkMode ? "experience-title-light" : "experience-title-dark"}>VINfix Algorithm and RESTful API</h5>
             <p class="inline-block">I designed the algorithm behind VINfix and the REST API that users and clients interface with.</p>
             <br/>
             <a class="inline-block" href="https://vinquery.com/vinfix">Here</a>
