@@ -10,12 +10,14 @@ import Camera from './assets/camera-icon.svg';
 import TokyoTower from './assets/tokyo-tower.jpg'
 import EiffelTower from './assets/eiffel-tower.jpg'
 import SophieLightMode from './assets/sophie-light-mode.jpg'
+import SophieDarkMode from './assets/sophie-dark-mode.png';
 import ArcadisLight from './assets/arcadis-logo-black.svg';
 import ArcadisDark from './assets/arcadis-logo-white.svg';
 import Vinquery from './assets/vinquery-logo.svg';
 import UBCBlue from './assets/ubc-logo-blue.png';
 import UBCWhite from './assets/ubc-logo-white.png';
 import EndLight from './assets/end-page-light.png';
+import EndDark from './assets/end-page-dark.png';
 
 
 function toggleMenu() {
@@ -57,7 +59,7 @@ function App() {
     <div className={isDarkMode ? "container-light" : "container-dark"}>
       <FloatingToolbar onScrollToHeader={scrollToHeader} setDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
       {/* need to change dark mode */}
-      <div className="mt-fuji-background">
+      <div className={isDarkMode ? "mt-fuji-background" : "eiffel-tower-background"}>
         <div class="center-container">
           <header className="Name-title">
             Sophie Song
@@ -67,21 +69,21 @@ function App() {
       <h1 ref={header1Ref}>Who <em>are </em> you?</h1>
         <div className="container-about-me">
           <div className="container-about-me-inner">
-            <img src={Briefcase} alt="Briefcase, representing current occupation"/>
+            <img src={Briefcase} alt="Briefcase, representing current occupation" className='icon'/>
             <p>Data Scientist @ Arcadis</p>
-            <img src={GradCap} alt="Graduation cap, representing education attained"/>
+            <img src={GradCap} alt="Graduation cap, representing education attained" className='icon'/>
             <p>B.Sc in Computational Intelligence and Design @ UBC <br/> (Cognitive Science & Computer Science)</p>
             {/* need to change dark mode  */}
-            <img className="container-about-me-pic" src={SophieLightMode} alt="A picture of me at TeamLab Planets"/>
+            <img className="container-about-me-pic" src={isDarkMode ? SophieLightMode : SophieDarkMode} alt="A picture of me at TeamLab Planets"/>
           </div>
           {/* <img className="container-about-me-tower" src={TokyoTower} alt="Picture of the Tokyo Tower I took"/> */}
           <div>{isDarkMode ? <img src={TokyoTower} alt="Tokyo Tower" className="container-about-me-pic"/> : <img src={EiffelTower} alt="Eiffel Tower" className="container-about-me-pic"/>}</div>
           <div className="container-about-me-inner">
-            <img src={GitHub} alt="GitHub icon"/>
+            <img src={GitHub} alt="GitHub icon" className='icon'/>
             <a href="https://github.com/misophie" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <img src={LinkedIn} alt="LinkedIn icon"/>
+            <img src={LinkedIn} alt="LinkedIn icon" className='icon'/>
             <a href="https://www.linkedin.com/in/sophie--song/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <img src={Camera} alt="Camera icon"/>
+            <img src={Camera} alt="Camera icon" className='icon'/>
             <a href="../assets/photos.pdf" target="_blank">Photography</a>
           </div>
         </div>
@@ -127,7 +129,7 @@ function App() {
           </div>
         </div>
         <div class="end-image-container">
-          <img src={EndLight}/>
+          <img src={isDarkMode ? EndLight : EndDark}/>
         </div>
     </div>
   );

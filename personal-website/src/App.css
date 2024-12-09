@@ -9,6 +9,15 @@
   /* margin: 0; */
 }
 
+/* eiffel tower background */
+.eiffel-tower-background {
+  background-image: url('./assets/eiffel-tower2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
 /* makes the background image flush with the top; used to have a white margin at the top */
 * {
   margin: 0;
@@ -189,6 +198,10 @@ h1 {
 .svg-responsive {
   width: 75%;
   height: auto; /* Maintain aspect ratio */
+}
+
+.icon {
+  mix-blend-mode: exclusion;
 }
 
 /* .strawberry-ladybug-background {
