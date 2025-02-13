@@ -79,11 +79,98 @@ h1 {
   padding: 5%;
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-aspect-ratio : 1/1) {
+/* @media only screen and (max-width: 600px) { */
   h1 {
     font-size: 2rem;
     font-family: inter;
+    padding: 5%;
   }
+  .container-about-me {
+    grid-template-columns: 1fr;
+    padding: 0 0 0 5%;
+  }
+
+  .container-about-me-inner {
+    grid-template-columns: 1fr;
+    gap: 2vw;
+  }
+
+  .container-experience-education {
+    grid-template-columns: 1fr;
+    gap: 5% 0 5% 5%;
+  }
+
+  .container-projects-light, .container-projects-dark {
+    grid-template-columns: 1fr;
+    gap: 5% 0 5% 5%;
+  }
+
+  /* .center-container {
+    height: auto;
+    padding: 10% 0;
+  } */
+
+  h1 {
+    font-size: 2rem;
+    padding: 2%;
+  }
+
+  /* .Name-title {
+    font-size: 8vw;
+    mix-blend-mode: exclusion;
+    font-family: inter;
+  } */
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .container-about-me-pic {
+    width: 100%;
+    padding-top: 2vh;
+  }
+
+  .end-image-container img {
+    width: 90%;
+  }
+
+  .container-experience-education {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4%;
+    row-gap: 3%;
+    margin: auto auto auto auto;
+    width: 25%;
+    display: grid;
+    /* margin-top: 1vw; */
+    height: 75vh;
+  }
+
+  .container-experience-education img {
+    height: 30%;
+    overflow-clip-margin: content-box;
+  }
+
+  .container-experience-education p {
+    font-size: 1.25em;
+  }
+
+  .container-projects-light img {
+    height: 30%;
+    place-self: center;
+  }
+
+  .container-projects-dark img {
+    height: 30%;
+    place-self: center;
+  }
+
+  /* .container-projects-light p {
+    font-size: 1.25em;
+  } */
+
 }
 
 /* container for the about-me */

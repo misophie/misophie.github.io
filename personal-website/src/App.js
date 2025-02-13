@@ -14,8 +14,8 @@ import SophieDarkMode from './assets/sophie-dark-mode.png';
 import ArcadisLight from './assets/arcadis-logo-black.svg';
 import ArcadisDark from './assets/arcadis-logo-white.svg';
 import Vinquery from './assets/vinquery-logo.svg';
-import UBCBlue from './assets/ubc-logo-blue.png';
-import UBCWhite from './assets/ubc-logo-white.png';
+import UBCBlue from './assets/ubc-logo-blue.svg';
+import UBCWhite from './assets/ubc-logo-white.svg';
 import EndLight from './assets/end-page-light.png';
 import EndDark from './assets/end-page-dark.png';
 
