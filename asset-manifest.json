@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.65ee1794.css",
+    "main.js": "/personal-website/static/js/main.aafabe68.js",
+    "static/media/eiffel-tower.jpg": "/personal-website/static/media/eiffel-tower.c57a1fd17a6e9723b65d.jpg",
+    "static/media/end-page-light.png": "/personal-website/static/media/end-page-light.7ebafb1b76622019cebe.png",
+    "static/media/end-page-dark.png": "/personal-website/static/media/end-page-dark.7e26a1030dc565afc22a.png",
+    "static/media/tokyo-tower.jpg": "/personal-website/static/media/tokyo-tower.0c0032f944979d7a560f.jpg",
+    "static/media/sophie-dark-mode.png": "/personal-website/static/media/sophie-dark-mode.12c7f40ab50bf2ab6f11.png",
+    "static/media/mt-fuji.jpg": "/personal-website/static/media/mt-fuji.1bd433e0406cb3fd916b.jpg",
+    "static/media/eiffel-tower2.jpg": "/personal-website/static/media/eiffel-tower2.c0ea312cfd2720b95188.jpg",
+    "static/media/sophie-light-mode.jpg": "/personal-website/static/media/sophie-light-mode.8ada88528fa078f4cd07.jpg",
+    "static/media/vinquery-logo.svg": "/personal-website/static/media/vinquery-logo.12d3db008718ecb3192c0e5c158e5ae2.svg",
+    "static/media/ubc-logo-blue.svg": "/personal-website/static/media/ubc-logo-blue.bc4bfd8ebe0d8150b7d03f40f5667f02.svg",
+    "static/media/ubc-logo-white.svg": "/personal-website/static/media/ubc-logo-white.72960069ab35da5bbf28bc8f79ff54ae.svg",
+    "static/media/arcadis-logo-black.svg": "/personal-website/static/media/arcadis-logo-black.ed1c996a4b13f5642a89374f65b8f6ba.svg",
+    "static/media/arcadis-logo-white.svg": "/personal-website/static/media/arcadis-logo-white.a3997aa29dc3158877bf6d27670c2785.svg",
+    "static/media/sun-icon.svg": "/personal-website/static/media/sun-icon.e748f18eb39ec4fe9219b9d779d39da8.svg",
+    "static/media/camera-icon.svg": "/personal-website/static/media/camera-icon.fb258e4ec0b2b7d34d4c6e195aec9677.svg",
+    "static/media/graduation-cap-icon.svg": "/personal-website/static/media/graduation-cap-icon.33e3e15a3d55f97afcd42f7c80e8702a.svg",
+    "static/media/briefcase-icon.svg": "/personal-website/static/media/briefcase-icon.9336c8c25c2a9f9cc26dd9455c70501c.svg",
+    "static/media/github-icon.svg": "/personal-website/static/media/github-icon.7b2c8ee7cd60f52f338b0933fe74f99f.svg",
+    "static/media/linkedin-icon.svg": "/personal-website/static/media/linkedin-icon.b47f7f279ee0a50d1680234cf5659b69.svg",
+    "static/media/moon-icon.svg": "/personal-website/static/media/moon-icon.e12c71d22e731344a9d01861f8078e81.svg",
+    "index.html": "/personal-website/index.html",
+    "main.65ee1794.css.map": "/personal-website/static/css/main.65ee1794.css.map",
+    "main.aafabe68.js.map": "/personal-website/static/js/main.aafabe68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65ee1794.css",
+    "static/js/main.aafabe68.js"
+  ]
+}
