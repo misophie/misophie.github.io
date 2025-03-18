@@ -77,14 +77,16 @@ function App() {
             <img className="container-about-me-pic" src={isDarkMode ? SophieLightMode : SophieDarkMode} alt="A picture of me at TeamLab Planets"/>
           </div>
           {/* <img className="container-about-me-tower" src={TokyoTower} alt="Picture of the Tokyo Tower I took"/> */}
-          <div>{isDarkMode ? <img src={TokyoTower} alt="Tokyo Tower" className="container-about-me-pic"/> : <img src={EiffelTower} alt="Eiffel Tower" className="container-about-me-pic"/>}</div>
+          <div className="container-about-me-inner">
+            {isDarkMode ? <img src={TokyoTower} alt="Tokyo Tower" className="container-about-me-pic"/> : <img src={EiffelTower} alt="Eiffel Tower" className="container-about-me-pic"/>}
+          </div>
           <div className="container-about-me-inner">
             <img src={GitHub} alt="GitHub icon" className='icon'/>
-            <a href="https://github.com/misophie" target="_blank" rel="noopener noreferrer">GitHub</a>
+            {isDarkMode ? <a href="https://github.com/misophie" target="_blank" rel="noopener noreferrer" className='light-mode-link'>GitHub</a> : <a href="https://github.com/misophie" target="_blank" rel="noopener noreferrer" className='dark-mode-link'>GitHub</a>}
             <img src={LinkedIn} alt="LinkedIn icon" className='icon'/>
-            <a href="https://www.linkedin.com/in/sophie--song/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            {isDarkMode ? <a href="https://www.linkedin.com/in/sophie--song/" target="_blank" rel="noopener noreferrer" className='light-mode-link'>LinkedIn</a> : <a href="https://www.linkedin.com/in/sophie--song/" target="_blank" rel="noopener noreferrer" className='dark-mode-link'>LinkedIn</a>}
             <img src={Camera} alt="Camera icon" className='icon'/>
-            <a href="../assets/photos.pdf" target="_blank">Photography</a>
+            {isDarkMode ? <a href="../assets/photos.pdf" target="_blank" rel="noopener noreferrer" className='light-mode-link'>Photography</a> : <a href="../assets/photos.pdf" target="_blank" rel="noopener noreferrer" className='dark-mode-link'>Photography</a>}
           </div>
         </div>
         <h1 ref={header2Ref}>Experience & Education</h1>
