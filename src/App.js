@@ -14,10 +14,11 @@ import SophieDarkMode from './assets/sophie-dark-mode.png';
 import ArcadisLight from './assets/arcadis-logo-black.svg';
 import ArcadisDark from './assets/arcadis-logo-white.svg';
 import Vinquery from './assets/vinquery-logo.svg';
-import UBCBlue from './assets/ubc-logo-blue.svg';
-import UBCWhite from './assets/ubc-logo-white.svg';
+import UBCBlue from './assets/ubc-logo-blue.png';
+import UBCWhite from './assets/ubc-logo-white.png';
 import EndLight from './assets/end-page-light.png';
 import EndDark from './assets/end-page-dark.png';
+import Thesis from './assets/COGS_402_Project.pdf';
 
 
 function toggleMenu() {
@@ -82,11 +83,11 @@ function App() {
           </div>
           <div className="container-about-me-inner">
             <img src={GitHub} alt="GitHub icon" className='icon'/>
-            {isDarkMode ? <a href="https://github.com/misophie" target="_blank" rel="noopener noreferrer" className='light-mode-link'>GitHub</a> : <a href="https://github.com/misophie" target="_blank" rel="noopener noreferrer" className='dark-mode-link'>GitHub</a>}
+            {isDarkMode ? <a href="https://github.com/misophie" target="_blank" rel="noopener noreferrer" >GitHub</a> : <a href="https://github.com/misophie" target="_blank" rel="noopener noreferrer" className='dark-mode-link'>GitHub</a>}
             <img src={LinkedIn} alt="LinkedIn icon" className='icon'/>
-            {isDarkMode ? <a href="https://www.linkedin.com/in/sophie--song/" target="_blank" rel="noopener noreferrer" className='light-mode-link'>LinkedIn</a> : <a href="https://www.linkedin.com/in/sophie--song/" target="_blank" rel="noopener noreferrer" className='dark-mode-link'>LinkedIn</a>}
+            {isDarkMode ? <a href="https://www.linkedin.com/in/sophie--song/" target="_blank" rel="noopener noreferrer" >LinkedIn</a> : <a href="https://www.linkedin.com/in/sophie--song/" target="_blank" rel="noopener noreferrer" className='dark-mode-link'>LinkedIn</a>}
             <img src={Camera} alt="Camera icon" className='icon'/>
-            {isDarkMode ? <a href="../assets/photos.pdf" target="_blank" rel="noopener noreferrer" className='light-mode-link'>Photography</a> : <a href="../assets/photos.pdf" target="_blank" rel="noopener noreferrer" className='dark-mode-link'>Photography</a>}
+            {isDarkMode ? <a href="../assets/photos.pdf" target="_blank" rel="noopener noreferrer" >Photography</a> : <a href="../assets/photos.pdf" target="_blank" rel="noopener noreferrer" className='dark-mode-link'>Photography</a>}
           </div>
         </div>
         <h1 ref={header2Ref}>Experience & Education</h1>
@@ -115,18 +116,18 @@ function App() {
             <p class="inline-block">I wrote a paper detailing an issue that was frequently overlooked when applying Judea Pearl’s theory with counterfactual arguments which is credited in David Poole and Alan Mackworth’s Artificial Intelligence textbook.</p>
             <br/>
             <p class="inline-block">You can read the paper </p> 
-            <a class="inline-block" href="./assets/COGS_402_Project.pdf" target="_blank">here</a> 
+            {isDarkMode ? <a class="inline-block" href={Thesis} target="_blank" rel = 'noopener noreferrer'>here</a> : <a class="inline-block" href="./assets/COGS_402_Project.pdf" target="_blank" className='dark-mode-link'>here</a> }
             <p class="inline-block"> and see the textbook example </p>
-            <a class="inline-block" href="https://artint.info/AIPython/aipython/aipython.pdf#page=274">here.</a>
+            {isDarkMode ? <a class="inline-block" href="https://artint.info/AIPython/aipython/aipython.pdf#page=274">here.</a> : <a class="inline-block" href="https://artint.info/AIPython/aipython/aipython.pdf#page=274" className='dark-mode-link'>here.</a>}
           </div>
           <img src={Vinquery} alt="VINquery Logo"/>
           <div>
             <h5 class={isDarkMode ? "experience-title-light" : "experience-title-dark"}>VINfix Algorithm and RESTful API</h5>
             <p class="inline-block">I designed the algorithm behind VINfix and the REST API that users and clients interface with.</p>
             <br/>
-            <a class="inline-block" href="https://vinquery.com/vinfix">Here</a>
+            {isDarkMode ? <a class="inline-block" href="https://vinquery.com/vinfix">Here</a> : <a class="inline-block" href="https://vinquery.com/vinfix" className='dark-mode-link'>Here</a>}
             <p class="inline-block"> is an overview of what it does and </p>
-            <a class="inline-block" href="https://vinquery.com/docs-vinfix">here</a>
+            {isDarkMode ? <a class="inline-block" href="https://vinquery.com/docs-vinfix">here</a> : <a class="inline-block" href="https://vinquery.com/docs-vinfix" className='dark-mode-link'>here</a>}
             <p class="inline-block"> is the documentation with some sample return values from the API.</p>
           </div>
         </div>

@@ -203,13 +203,11 @@ h1 {
 }
 
 .dark-mode-link {
-  color: #CCCCCC;
-  text-decoration: none;
+  color: #ADD8E6;
 }
 
-.light-mode-link {
-  color: #000000;
-  text-decoration: none;
+.dark-mode-link:visited {
+  color: #CBC3E3;
 }
 
 /* .strawberry-ladybug-background {
