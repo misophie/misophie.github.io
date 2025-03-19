@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b530a06c.css",
-    "main.js": "/static/js/main.69323d54.js",
+    "main.js": "/static/js/main.260d4c7e.js",
     "static/media/eiffel-tower.jpg": "/static/media/eiffel-tower.c57a1fd17a6e9723b65d.jpg",
     "static/media/end-page-light.png": "/static/media/end-page-light.7ebafb1b76622019cebe.png",
     "static/media/end-page-dark.png": "/static/media/end-page-dark.7e26a1030dc565afc22a.png",
@@ -10,9 +10,9 @@
     "static/media/mt-fuji.jpg": "/static/media/mt-fuji.1bd433e0406cb3fd916b.jpg",
     "static/media/eiffel-tower2.jpg": "/static/media/eiffel-tower2.c0ea312cfd2720b95188.jpg",
     "static/media/sophie-light-mode.jpg": "/static/media/sophie-light-mode.8ada88528fa078f4cd07.jpg",
+    "static/media/ubc-logo-blue.png": "/static/media/ubc-logo-blue.3fddcbd5092736d313fc.png",
     "static/media/vinquery-logo.svg": "/static/media/vinquery-logo.12d3db008718ecb3192c0e5c158e5ae2.svg",
-    "static/media/ubc-logo-white.png": "/static/media/ubc-logo-white.ed5dc00e5a6b8d6239b3.png",
-    "static/media/ubc-logo-blue.svg": "/static/media/ubc-logo-blue.bc4bfd8ebe0d8150b7d03f40f5667f02.svg",
+    "static/media/ubc-logo-white.png": "/static/media/ubc-logo-white.486739cf564140d346c1.png",
     "static/media/arcadis-logo-black.svg": "/static/media/arcadis-logo-black.ed1c996a4b13f5642a89374f65b8f6ba.svg",
     "static/media/arcadis-logo-white.svg": "/static/media/arcadis-logo-white.a3997aa29dc3158877bf6d27670c2785.svg",
     "static/media/sun-icon.svg": "/static/media/sun-icon.e748f18eb39ec4fe9219b9d779d39da8.svg",
@@ -24,10 +24,10 @@
     "static/media/moon-icon.svg": "/static/media/moon-icon.e12c71d22e731344a9d01861f8078e81.svg",
     "index.html": "/index.html",
     "main.b530a06c.css.map": "/static/css/main.b530a06c.css.map",
-    "main.69323d54.js.map": "/static/js/main.69323d54.js.map"
+    "main.260d4c7e.js.map": "/static/js/main.260d4c7e.js.map"
   },
   "entrypoints": [
     "static/css/main.b530a06c.css",
-    "static/js/main.69323d54.js"
+    "static/js/main.260d4c7e.js"
   ]
 }
