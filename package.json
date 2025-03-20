@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "serve -s build",
-    "add-domain": "echo \"sophiesong.com\" > build/CNAME",
+    "add-domain": "echo \"sophiesong.com\" > build/static/CNAME",
     "bd": "npm run build && npm run deploy"
   },
   "eslintConfig": {
